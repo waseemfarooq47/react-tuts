@@ -1,36 +1,30 @@
-// const heading = React.createElement(
-//   "h1",
-//   {
-//     id: "heading",
-//   },
-//   "Hello react from CDN"
-// );
+import React from "react";
+import { createRoot } from "react-dom/client";
+import Logo from "./src/images/logo.png";
 
-// console.log(heading);
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading);
-
-/*multiple childrens 
-<div id="parent">
-    <div id="children">
-        <h1>I am h1 tag</h1>
+const Header = () => {
+  return (
+    <div className="Header-cover">
+      <div className="logo">
+        <img src={Logo} alt="no-img"></img>
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Cart</li>
+        </ul>
+      </div>
     </div>
-    <div id="children">
-        <h1>I am h1 tag</h1>
-        <h2>I am h2 tag</h2>
-    </div>
-</div>*/
+  );
+};
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "children" }, [
-    React.createElement("h1", {}, "This is H1 Tag"),
-    React.createElement("h2", {}, "This is H2 Tag"),
-  ]),
-  React.createElement("div", { id: "children2" }, [
-    React.createElement("h1", {}, "This is H1 Tag"),
-    React.createElement("h2", {}, "This is H2 Tag"),
-  ]),
-]);
+const App = () => (
+  <div className="container">
+    <Header />
+  </div>
+);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+const root = createRoot(document.getElementById("root"));
+root.render(<App />);

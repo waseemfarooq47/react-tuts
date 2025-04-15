@@ -1,0 +1,33 @@
+{
+  "name": "tutorials-react",
+  "version": "1.0.0",
+  "description": "\"learning react js\"",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waseemfarooq47/react-tuts.git"
+  },
+  "keywords": [
+    "\"react",
+    "npm\""
+  ],
+  "author": "waseem farooq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waseemfarooq47/react-tuts/issues"
+  },
+  "homepage": "https://github.com/waseemfarooq47/react-tuts#readme",
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  },
+  "dependencies": {
+    "build": "^0.1.4",
+    "i": "^0.3.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
